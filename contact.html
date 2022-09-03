@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My Contact</title>
-  </head>
-  <body>
-      <h3>Contact Information :</h3>
-         <a href="mailto:sitansubiswas2000@gmail.com?subject=feedback">Mail</a> <br><a href="www.linkedin.com/in/sitansu-biswas-905479204">Linkdin</a>
-      <br><a href="https://twitter.com/msdian070">Twitter</a>
-      <hr>
-      <form class="" action="index.html" method="post">
-        <label>Your Name:</label>
-        <input type="text" name="" value=""><br><br>
-        <label for="Email">Your Email:</label>
-        <input type="text" name="" value=""><br>
-      <label>Your Message:</label><br>
-<textarea name="Message" rows="7" cols="30"></textarea><br>
-    <input type="submit" name="">
-      </form>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Contact</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="contacthead"><h2>Contact Me</h2></div>
+  
+  <div class="social-links">
+     <a class="lnk" href="mailto:sitansubiswas2000@gmail.com?subject=feedback">Mail</a> 
+   
+     <a class="lnk" href="https://linkedin.com/in/sitansu-biswas-905479204/">LinkdIn</a>
+    
+     <a class="lnk" href="https://twitter.com/msdian070">Twitter</a>
+</div>
+  <div class="message">
+  <form>
+    <!-- <label>Name</label> -->
+    <input class="name" type="text" placeholder="Name" value=""><br><br>
+    <!-- <label for="Email">Email</label> -->
+    <input class="name"  type="text" placeholder="Email" value=""><br>
+    <!-- <label>Message</label><br> -->
+    <br>
+    <textarea class="msg" name="Message" placeholder="Message" rows="7" cols="21"></textarea><br>
+    <br>
+  </form>
+  </div>
+  <div class="submit">
+    <button id="submit" class="btn" onclick="clicker()">Submit</button>
+  </div>
+  <script >
+    function clicker(){
+      document.addEventListener("click",alert('This feature is not available right now'))   
+    }
+  </script>
+</body>
+
 </html>
